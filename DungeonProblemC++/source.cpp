@@ -10,7 +10,7 @@ int main() {
 	int choice = 0;
 	game.print();
 	std::pair<int, int> position = game.findPosition(9);
-	std::cout << "(" << position.first << ", " << position.second << ")\n";
+	std::cout << "Position of exit is: (" << position.first << ", " << position.second << ")\n";
 	std::cout << "Choose algorithm 1 or 2: ";
 	std::cin >> choice;
 	switch (choice) {
@@ -22,6 +22,5 @@ int main() {
 			std::cout << "The path was found:  " << game.solve2() << "\n";
 			break;
 	}
-
 	return 0;
 }

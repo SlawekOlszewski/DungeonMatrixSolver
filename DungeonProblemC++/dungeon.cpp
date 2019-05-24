@@ -9,7 +9,6 @@ dungeon::dungeon()
 	std::string temp;
 
 	while (std::getline(file, temp)) {
-		//Do with temp
 		std::stringstream stream;
 		std::string ch;
 		stream << temp;
